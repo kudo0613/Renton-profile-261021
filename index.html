@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f6f3ed">
+<meta name="description" content="レントンのプロフィール。仕事のこと、好きなこと、これから挑戦したいこと。">
+<title>レントン｜気ままに、着実に。</title>
+<style>
+:root{--ink:#24342f;--muted:#64736d;--paper:#f6f3ed;--card:#fffefa;--green:#58796b;--pale:#e4ece5;--orange:#d88c62;--line:#e4e1d8}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Hiragino Kaku Gothic ProN","Yu Gothic",Meiryo,sans-serif;line-height:1.8}
+a{color:inherit}.wrap{width:min(1080px,calc(100% - 40px));margin:auto}
+header{padding:22px 0;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.logo{font-weight:800;letter-spacing:.08em;font-size:1.05rem}.logo span{color:var(--green)}
+nav{display:flex;gap:22px;font-size:.9rem}nav a{text-decoration:none;color:var(--muted)}nav a:hover{color:var(--ink)}
+.hero{padding:72px 0 80px;display:grid;grid-template-columns:1.25fr .75fr;align-items:center;gap:48px}
+.eyebrow{font-size:.78rem;letter-spacing:.18em;color:var(--green);font-weight:800}
+h1{font-size:clamp(2.5rem,6vw,5rem);line-height:1.2;letter-spacing:-.045em;margin:18px 0 22px}
+h1 em{font-style:normal;color:var(--green)}.lead{font-size:1.08rem;color:var(--muted);max-width:590px}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
+.btn{display:inline-block;padding:11px 20px;border-radius:999px;text-decoration:none;font-weight:700;font-size:.92rem}
+.btn-primary{background:var(--green);color:white}.btn-secondary{border:1px solid #c8d2c9;background:transparent}
+.art{min-height:330px;border-radius:48% 48% 38% 38%;background:var(--pale);display:grid;place-items:center;position:relative;overflow:hidden}
+.sun{position:absolute;width:170px;height:170px;border-radius:50%;background:#e9bd8f;top:34px;right:26px;opacity:.9}
+.plant{position:absolute;bottom:-18px;width:210px;height:235px;border-radius:55% 55% 0 0;background:#8ba795;transform:rotate(-7deg)}
+.plant:before,.plant:after{content:"";position:absolute;background:#58796b;border-radius:100% 0 100% 0;width:95px;height:150px;top:-45px;left:14px;transform:rotate(-28deg)}
+.plant:after{left:100px;top:5px;transform:rotate(45deg);background:#6f927f}
+.art-label{position:relative;z-index:2;background:var(--card);padding:14px 18px;border-radius:18px;box-shadow:0 12px 32px #24342f12;font-weight:800;transform:translateY(42px)}
+section{padding:70px 0}.section-head{margin-bottom:30px}.section-head .eyebrow{margin-bottom:6px}.section-head h2{font-size:clamp(1.8rem,4vw,2.6rem);line-height:1.3;margin:0;letter-spacing:-.03em}
+.about-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:38px;align-items:start}
+.note{background:var(--pale);padding:28px;border-radius:24px;font-size:1.1rem;font-weight:700}
+.about-copy{color:var(--muted);margin:0}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:var(--card);border:1px solid var(--line);padding:25px;border-radius:22px}
+.card-icon{width:44px;height:44px;border-radius:14px;background:var(--pale);display:grid;place-items:center;font-size:1.3rem;margin-bottom:18px}
+.card h3{margin:0 0 8px;font-size:1.15rem}.card p{margin:0;color:var(--muted);font-size:.95rem}
+.timeline{display:grid;grid-template-columns:150px 1fr;gap:14px 28px;max-width:800px}
+.timeline .year{font-weight:800;color:var(--green)}.timeline .detail{padding-bottom:18px;border-bottom:1px solid var(--line)}
+.timeline .detail strong{display:block;margin-bottom:4px}.timeline .detail p{margin:0;color:var(--muted);font-size:.95rem}
+.personal{background:#e9eee7}
+.pills{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}.pill{padding:8px 14px;border-radius:999px;background:#fffefa;border:1px solid #dce4db;font-size:.9rem}
+.closing{background:var(--green);color:white;border-radius:28px;padding:38px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.closing h2{margin:0;font-size:clamp(1.5rem,3vw,2.2rem);line-height:1.4}.closing p{margin:8px 0 0;color:#e0e9e2}
+.closing .btn{background:white;color:var(--ink);white-space:nowrap}
+footer{padding:30px 0 38px;color:var(--muted);font-size:.82rem;display:flex;justify-content:space-between;gap:16px}
+@media(max-width:760px){nav{gap:12px;font-size:.82rem}.hero{grid-template-columns:1fr;padding:44px 0 56px;gap:28px}.art{min-height:260px;max-width:420px;width:100%;margin:auto}.about-grid{grid-template-columns:1fr;gap:18px}.cards{grid-template-columns:1fr}.timeline{grid-template-columns:1fr;gap:4px}.timeline .year{margin-top:12px}.closing{align-items:flex-start;flex-direction:column}section{padding:52px 0}footer{flex-direction:column;gap:4px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header class="wrap">
+  <a class="logo" href="#top" style="text-decoration:none">RENTON<span>.</span></a>
+  <nav aria-label="メインナビゲーション"><a href="#about">プロフィール</a><a href="#work">仕事のこと</a><a href="#life">好きなこと</a></nav>
+</header>
+<main id="top">
+  <div class="wrap hero">
+    <div>
+      <div class="eyebrow">HELLO, I'M RENTON</div>
+      <h1>気ままに、<br><em>着実に。</em></h1>
+      <p class="lead">人と向き合い、アイデアを形にし、昨日より少し前へ。仕事も暮らしも、自分らしいペースで面白くしていきたいと思っています。</p>
+      <div class="hero-actions"><a class="btn btn-primary" href="#about">プロフィールを見る</a><a class="btn btn-secondary" href="#life">好きなこと</a></div>
+    </div>
+    <div class="art" aria-label="植物と太陽をイメージしたイラスト">
+      <div class="sun"></div><div class="plant"></div><div class="art-label">Curious by nature.</div>
+    </div>
+  </div>
+
+  <section id="about">
+    <div class="wrap">
+      <div class="section-head"><div class="eyebrow">ABOUT ME</div><h2>まずは、自己紹介。</h2></div>
+      <div class="about-grid">
+        <div class="note">人とのつながりを大切に。<br>考えるだけで終わらせず、<br>まず動いてみる。</div>
+        <p class="about-copy">はじめまして、レントンです。これまで営業を軸に、セールスプロモーションやマーケティングの仕事に携わってきました。お客さまの話を聞き、課題を整理し、周囲の人と力を合わせて形にしていく。そんな仕事の進め方が自分の持ち味だと思っています。<br><br>最近はブランディングや組織づくりにも関心を広げています。新しい知識を取り入れながら、経験を別の角度から活かすことが目下のテーマです。</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="work">
+    <div class="wrap">
+      <div class="section-head"><div class="eyebrow">WHAT I DO</div><h2>仕事で大切にしていること。</h2></div>
+      <div class="cards">
+        <article class="card"><div class="card-icon" aria-hidden="true">◎</div><h3>相手を理解する</h3><p>まずは相手の立場や背景を知ること。表面的な要望だけでなく、本当に解決したい課題を探ります。</p></article>
+        <article class="card"><div class="card-icon" aria-hidden="true">✳</div><h3>アイデアを形にする</h3><p>企画を考えるだけでなく、実行できる段取りに落とし込み、関係者と一緒に前へ進めます。</p></article>
+        <article class="card"><div class="card-icon" aria-hidden="true">↗</div><h3>チームで成果を出す</h3><p>個人の力だけに頼らず、情報を共有し、互いの強みを活かせるチームづくりを目指します。</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="personal" id="life">
+    <div class="wrap">
+      <div class="section-head"><div class="eyebrow">OFF THE CLOCK</div><h2>仕事以外の、自分時間。</h2></div>
+      <p class="about-copy">身体を動かして頭をリセットしたり、家族と出かけたり、気になったことを調べて試したり。日々の小さな楽しみや新しい発見を大事にしています。</p>
+      <div class="pills"><span class="pill">筋トレ・フィットネス</span><span class="pill">旅行・ホテル</span><span class="pill">学び直し</span><span class="pill">AIツールを試す</span><span class="pill">企画・アイデア探し</span></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="section-head"><div class="eyebrow">THE NEXT CHAPTER</div><h2>これから、やってみたいこと。</h2></div>
+      <div class="timeline">
+        <div class="year">仕事</div><div class="detail"><strong>マーケティングからブランディングへ</strong><p>販促の現場で培った視点を活かし、企業やサービスの価値を長い目で育てる仕事に挑戦する。</p></div>
+        <div class="year">学び</div><div class="detail"><strong>経験を知識として整理する</strong><p>経営や組織づくりを学び、実務経験と理論をつなげていく。</p></div>
+        <div class="year">暮らし</div><div class="detail"><strong>無理なく、長く続ける</strong><p>健康づくりも新しい挑戦も、気負いすぎず習慣にしていく。</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap closing">
+      <div><h2>人生、まだまだ面白く。</h2><p>好奇心を忘れず、一歩ずつ。</p></div>
+      <a class="btn" href="#top">ページの先頭へ ↑</a>
+    </div>
+  </section>
+</main>
+<footer class="wrap"><span>© <span id="year">2026</span> RENTON</span><span>このサイトは個人プロフィール用のサンプルです。</span></footer>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
